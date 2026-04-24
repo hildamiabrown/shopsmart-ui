@@ -1,6 +1,6 @@
 # ShopSmart UI - Responsive E-Commerce Interface
 
-GitHub repository: [github.com/hildabrown/shopsmart-ui](https://github.com/hildabrown/shopsmart-ui)
+GitHub repository: [github.com/hildamiabrown/shopsmart-ui](https://github.com/hildamiabrown/shopsmart-ui)
 
 ShopSmart UI is a responsive front-end e-commerce interface built with HTML, CSS, and JavaScript. It includes dynamic product rendering, live search, category filtering, mobile navigation, cart feedback, and responsive layouts optimized for desktop and mobile screens.
 
