@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSmart UI | Responsive E-Commerce Interface</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#" aria-label="ShopSmart home">
+        <span class="brand-mark">S</span>
+        <span>ShopSmart</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" data-nav-menu>
+        <a href="#products">Products</a>
+        <a href="#deals">Deals</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#checkout">Checkout</a>
+      </div>
+
+      <button class="cart-button" type="button" aria-label="View cart">
+        <span>Cart</span>
+        <strong data-cart-count>0</strong>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Smart essentials, curated daily</p>
+        <h1>Shop faster with a cleaner responsive storefront.</h1>
+        <p>
+          Browse featured electronics, home goods, apparel, and wellness picks with
+          instant filters, live search, and a smooth cart experience.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#products">Shop collection</a>
+          <a class="secondary-action" href="#deals">See today's deals</a>
+        </div>
+      </div>
+
+      <div class="hero-panel" aria-label="Featured deal preview">
+        <img
+          src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
+          alt="Laptop and shopping essentials on a desk">
+        <div class="deal-badge">
+          <span>Weekend drop</span>
+          <strong>Up to 35% off</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Store highlights">
+      <article>
+        <strong>48h</strong>
+        <span>fast delivery</span>
+      </article>
+      <article>
+        <strong>4.8</strong>
+        <span>average rating</span>
+      </article>
+      <article>
+        <strong>24/7</strong>
+        <span>support access</span>
+      </article>
+    </section>
+
+    <section class="toolbar" id="products">
+      <div>
+        <p class="eyebrow">Featured Products</p>
+        <h2>Fresh picks for everyday shopping</h2>
+      </div>
+
+      <div class="controls" aria-label="Product filters">
+        <label class="search-field">
+          <span class="sr-only">Search products</span>
+          <input type="search" placeholder="Search products" data-search-input>
+        </label>
+
+        <select data-category-filter aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="home">Home</option>
+          <option value="style">Style</option>
+          <option value="wellness">Wellness</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="product-grid" data-product-grid aria-live="polite"></section>
+
+    <section class="split-section" id="deals">
+      <div>
+        <p class="eyebrow">Member Deals</p>
+        <h2>Bundle smarter and save more.</h2>
+        <p>
+          ShopSmart recommends product bundles based on popular pairings, giving
+          shoppers a quick path from browsing to checkout.
+        </p>
+      </div>
+      <div class="deal-list">
+        <article>
+          <span>01</span>
+          <strong>Tech workday bundle</strong>
+          <p>Noise-canceling audio, a laptop stand, and cable storage.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Refresh your space</strong>
+          <p>Lighting, textiles, and storage picked for compact apartments.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Wellness restock</strong>
+          <p>Reusable bottle, smart scale, and recovery basics.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div>
+        <p class="eyebrow">Customer Reviews</p>
+        <h2>Built for quick decisions.</h2>
+      </div>
+      <div class="review-grid">
+        <article>
+          <strong>"Clean and easy to use."</strong>
+          <p>The filters make it simple to compare products on mobile.</p>
+        </article>
+        <article>
+          <strong>"Checkout feels fast."</strong>
+          <p>The cart feedback is immediate, so shoppers know what changed.</p>
+        </article>
+        <article>
+          <strong>"Looks sharp everywhere."</strong>
+          <p>The layout adapts smoothly from phones to desktop screens.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="checkout-strip" id="checkout">
+      <div>
+        <p class="eyebrow">Ready to checkout?</p>
+        <h2>Your cart updates instantly as you shop.</h2>
+      </div>
+      <button class="primary-action" type="button" data-checkout-button>Review cart</button>
+    </section>
+  </main>
+
+  <aside class="toast" data-toast role="status" aria-live="polite"></aside>
+
+  <footer class="footer">
+    <p>ShopSmart UI - Responsive E-Commerce Interface</p>
+    <a href="https://github.com/hildabrown/shopsmart-ui">github.com/hildabrown/shopsmart-ui</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
